@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Avant Garde Gothic';
+    src: url('/assets/fonts/Avant-Garde-Gothic-Medium.otf'),
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: 'Sen', sans-serif;
+    position: relative;
+    font-family: 'Avant Garde Gothic', 'Avant Garde', sans-serif;
+    font-size: 1em;
+}
+
+.wrapper {
+    margin: 30px 120px 0 120px;
+    padding: 0;
+}
+
+@media (max-width: 1150px) {
+    .wrapper {
+        margin: 30px 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        margin: 16px 16px;
+    }
+}
