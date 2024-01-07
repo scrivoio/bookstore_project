@@ -108,7 +108,7 @@ input:focus::placeholder {
     ul {
         display: grid;
         gap: 2px;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 50%);
     }
     .header__list li {
         padding: 0;
