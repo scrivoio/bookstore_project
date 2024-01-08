@@ -1,50 +1,39 @@
 
-/* Header container */
-
-
-.header__container {
-    display: grid;
-    box-sizing: border-box;
-    grid-template-columns: 45% 10% 45%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1290px;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 2px solid #fa6400;
 }
 
 .header__wrapper {
-    margin: 30px 120px 0 120px;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
 .header__burger {
     display: none;
 }
 
-.header__list, 
-.header__logo,
-.header__social {
-    text-align: center;
-}
-
 /* Header left part */
 
-.header__list {
-    font-weight: 700;
-    padding-right: 20px;
-}
-
-ul {
+.navigation__list {
     margin-block-end: 0;
     margin-block-start: 0;
     padding-inline-start: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content:space-between;
-    align-items: center;
 }
 
-.header__list li {
+.header__item {
     list-style: none;
 }
 
@@ -58,18 +47,32 @@ ul {
     cursor: pointer;
 }
 
+
+/* Header cwnter part */
+
+.header__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__logo > img {
     width: 53px;
 }
+
 
 /* Header right part */
 
 .header__social {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 100px;
     align-items: center;
     justify-content: flex-end;
+}
+
+.social__list {
+    display: flex;
+    gap: 20px;
 }
 
 .header__social img {
@@ -87,120 +90,78 @@ ul {
     gap: 10px;
 }
 
-input {
+.header__search_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__search > input {
     width: 100%;
     border: none;
     padding-bottom: 3px;
     border-bottom: 1px solid #e6e6e6;
 }
 
-input:focus {
+.header__search > input:focus {
     outline: 2px solid #fa6400; 
     border-radius: 3px;
 }
 
-input:focus::placeholder {
+.header__search > input:focus::placeholder {
     color: transparent;
   }
 
-.header__line {
-    border-top: 2px solid #fa6400;
-    margin-top: 10px;
-    position: relative;
-    width: 100%
+
+
+
+@media (max-width: 950px) {
+   .navigation__list {
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+   }
+   .header__social {
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    transform: translateY(-16px);
+    }
+    .social__list {
+        transform: translateX(20px);
+    }
 }
 
-
-
-
-
-  @media (max-width: 1363px) {
-    .header__container {
-        grid-template-columns: 35% 30% 35%;
-        padding: 10px 0;
-    }
-    ul {
-        display: grid;
-        gap: 2px;
-        grid-template-columns: repeat(2, 50%);
-    }
-    .header__list li {
-        padding: 0;
-        text-align: left;
-  }
-  .header__social {
-        flex-direction: column-reverse;
-        gap: 40px;
-        padding: 0;
-  }
-
-  .header__social_list {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 750px) {
     .header__wrapper {
-        margin: 30px 40px;
+        padding: 0 16px;
+        max-height: 50px;
     }
-}
-
-
-@media (max-width: 920px) {
-    .header__social_list {
-       gap: 10px;
+    .header__logo img {
+        width: 40px
     }
-    .header__social {
-        padding-left: 60px;
-    }
-    .header__social_list {
-        gap: 10px;
-    }
-}
-
-@media (max-width: 800px) {
-    .header__container {
-    padding: 0;
-    }
-
-    .header__list {
-        display: none;
-    }
-    .header__social {
-        margin: 0;
-        padding: 0;
-    }
-    .header__social_list {
+    .navigation__list,
+    .social__list {
         display: none;
     }
     input {
         display: none;
     }
-    .header__container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .header__social {
+        transform: translateY(-2px);
+        width: auto;
+    }
+    .header__social img {
+        width: 26px;
+        height: auto;
     }
     .header__burger {
         display: block;
+        width: 86px;
     } 
     .header__burger img {
-        width: 50px;
-        padding: 0;
-        margin: 0;
-    }
-    .header__logo > img {
-        width: 43px;
-    }
-    
-    .header__social img {
-        width: 28px;
-        height: 28px;
-    }
-    .header__wrapper {
-        margin: 16px 16px;
+        width: 40px;
     }
 }
 
