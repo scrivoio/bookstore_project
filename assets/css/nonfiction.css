@@ -1,22 +1,22 @@
-.bestsellers {
+.nonfiction {
     margin-top: 70px;
 }
 
-.bestsellers > h3 {
+.nonfiction > h3 {
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 50px;
     border-top: solid 2px #000;
 }
 
-.bestsellers__container {
+.nonfiction__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
-.bestsellers__card {
+.nonfiction__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,18 +24,18 @@
     text-align: center;
 }
 
-.bestsellers__card img {
+.nonfiction__card img {
     object-fit: contain;
     width: 100%;
 }
 
-.bestsellers__desription h3 {
+.nonfiction__desription h3 {
     font-size: 0.8rem;
     margin: 0;
     padding: 10px 0;
 }
 
-.bestsellers__desription p {
+.nonfiction__desription p {
     font-size: 0.6rem;
     text-transform: uppercase;
     margin: 0;
@@ -44,16 +44,16 @@
 
 
 @media (max-width: 1000px) {
-    .bestsellers__card {
+    .nonfiction__card {
         width: 26%;
     }
 }
 
 @media (max-width: 500px) {
-    .bestsellers__container {
+    .nonfiction__container {
         justify-content: space-evenly;
     }
-    .bestsellers__card {
+    .nonfiction__card {
         width: 40%;
     }
 }
