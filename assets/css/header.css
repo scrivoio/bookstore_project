@@ -96,19 +96,19 @@ header {
     margin-right: auto;
 }
 
-.header__search > input {
+.header__input {
     width: 100%;
     border: none;
     padding-bottom: 3px;
     border-bottom: 1px solid #e6e6e6;
 }
 
-.header__search > input:focus {
+.header__input:focus {
     outline: 2px solid #fa6400; 
     border-radius: 3px;
 }
 
-.header__search > input:focus::placeholder {
+.header__input:focus::placeholder {
     color: transparent;
   }
 
@@ -145,7 +145,7 @@ header {
     .social__list {
         display: none;
     }
-    input {
+    .header__input {
         display: none;
     }
     .header__social {
