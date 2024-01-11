@@ -19,7 +19,7 @@
 }
 
 .podcast__title p {
-    margin: 10px 0;
+    margin-top: 6px;
 }
 
 .podcast__title h2 {
@@ -34,16 +34,16 @@
     border-bottom: 2px solid #000;
     line-height: 20px;
     font-size: 0.9rem;
+    padding-top: 10px;
 }
 
 .podcast__text > p {
-    padding: 0 16px 0 16px;
+    padding: 0 16px;
 }
 
 .podcast__footer {
     background-color: #000;
     color: #fff;
-    margin-top: 40px;
     margin: 40px 16px 0px 16px; 
     text-transform: uppercase;
     letter-spacing: .0875rem;

@@ -56,8 +56,8 @@
 }
 
 @media (max-width: 500px) {
-    .footer {
-        gap: 50px;
+    .footer__main {
+        gap: 60px;
     }
     .footer__title h3  {
         font-size: 0.6rem;
